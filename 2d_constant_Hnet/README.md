@@ -24,7 +24,7 @@ met->Hsw[i] = 0.;'
 ```
 ## State equation
 
-In this example, the change of density is primarily based on the temperature. Though the salinity is still in the state equation (check `state.c`), but we set salinity as a constant (check 'scripts
+In this example, the change of density is primarily based on the temperature. Though the salinity is still in the state equation (check `state.c`), but we set salinity as a constant (check `scripts
 /make_scenario_tidalfront.py`)
 ```
  # Velocity boundary
