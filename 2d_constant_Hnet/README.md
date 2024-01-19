@@ -14,13 +14,21 @@ Noted that this 2D model is quasi-2d which has 3 grid point in the y- axis (alon
 
 ## Set up for the constant net heat loss
 
-set the `metmodel==3` to ensure the model has a uniformly constant net heat flux applied throughout the entire simulation. (here we set
+set the `metmodel==3` in the `met.c` to ensure the model has a uniformly constant net heat flux applied throughout the entire simulation. 
 
 ```
 met->Hl[i] = -100.; // contant
 met->Hlw[i] = 0.;
 met->Hs[i] = 0.;
 met->Hsw[i] = 0.;'
+```
+## State equation
+
+In this example, the change of density is primarily based on the temperature. Though the salinity is still in the state equation (check `state.c`), but we set salinity as a constant (check 'scripts
+/make_scenario_tidalfront.py`)
+```
+ # Velocity boundary
+bnd.boundary_S[:,k,ii] = S0
 ```
 
 ---
