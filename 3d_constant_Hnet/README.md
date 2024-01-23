@@ -3,12 +3,12 @@
 ## bathymetry and resolution
 - alongshore uniform and consisted of a constant sloping bottom at the coast, followed by a flat bottom extending offshore
 - 300x250x40 grid size of domain with 1 km horizontal resolution and ~ 5.5 m vertical resolution
-- grid folder in `P300x250`
+
 
 # boundary condition
 - periodic boundary condition in the along-shelf direction
 - open offshore
-- lose coast 
+- close coast 
 
 ## constant net heat loss
 
