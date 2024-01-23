@@ -1,6 +1,6 @@
-# 2d version of the constant buoyancy flux base case simulation
+# 2d version of the constant buoyancy flux base case simulation with ramp factor considered
 
-2D model domain with a constant sloping bottom shelf/ridge topography, linear vertical temperature (density) stratification without tidal forcing (barotropic tide) at one open offshore and one closed coast boundary. The instability is eliminated in this 2d model. This model is the 2d version of the NWS representative case. 
+Based on the example model run of `2d_constant_Hnet`, this example considered applying the ramp factor in the quasi-2d simulation.
 
 ## Notes on periodic grid generation
 
@@ -17,11 +17,13 @@ Noted that this 2D model is quasi-2d which has 3 grid point in the y- axis (alon
 set the `metmodel==3` in the `met.c` to ensure the model has a uniformly constant net heat flux applied throughout the entire simulation. 
 
 ```
-met->Hl[i] = -100.; // contant
+met->Hl[i] = -100.0*rampfac; // contant
 met->Hlw[i] = 0.;
 met->Hs[i] = 0.;
 met->Hsw[i] = 0.;'
 ```
+
+where the `rampfac` was set in the `boundaries.c`. need to point the location of rampfac carefully to make SUNTANS running.
 ## State equation
 
 In this example, the change of density is primarily based on the temperature. Though the salinity is still in the state equation (check `state.c`), but we set salinity as a constant (check `scripts
