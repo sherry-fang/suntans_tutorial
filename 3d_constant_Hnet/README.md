@@ -5,7 +5,7 @@
 - 300x250x40 grid size of domain with 1 km horizontal resolution and ~ 5.5 m vertical resolution
 
 
-# boundary condition
+## boundary condition
 - periodic boundary condition in the along-shelf direction
 - open offshore
 - close coast 
