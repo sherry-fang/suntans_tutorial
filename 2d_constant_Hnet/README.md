@@ -1,4 +1,4 @@
-# 2d version of the constant buoyancy flux base case simulation
+# 2d (quasi) version of the constant buoyancy flux base case simulation
 
 2D model domain with a constant sloping bottom shelf/ridge topography, linear vertical temperature (density) stratification without tidal forcing (barotropic tide) at one open offshore and one closed coast boundary. The instability is eliminated in this 2d model. This model is the 2d version of the NWS representative case. 
 
