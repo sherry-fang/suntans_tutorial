@@ -11,6 +11,7 @@ Modify the script to change the grid resolution.
 Also note that this example has its own `grid.c` file that calculates geometry variables appropriately for a periodic domain.
 
 Noted that this 2D model is quasi-2d which has 3 grid point in the y- axis (along-shelf direction).
+This simulation will use grid size of `P300x3`
 
 ## Set up for the constant net heat loss
 
